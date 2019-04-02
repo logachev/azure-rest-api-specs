@@ -840,6 +840,7 @@
       "description": "Permissions the identity has for keys, secrets, certificates and storage."
     },
     "VaultProperties": {
+      "type": "object",
       "properties": {
         "tenantId": {
           "type": "string",
@@ -902,6 +903,9 @@
         "tenantId",
         "sku"
       ],
+      "additionalProperties": {
+        "type": "string"
+      },
       "description": "Properties of the vault"
     },
     "VaultPatchProperties": {
