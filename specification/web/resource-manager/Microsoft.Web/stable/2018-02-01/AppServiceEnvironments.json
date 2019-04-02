@@ -170,20 +170,23 @@
               "$ref": "#/definitions/AppServiceEnvironmentResource"
             }
           },
+          "201": {
+            "description": "Created.",
+            "schema": {
+              "$ref": "#/definitions/AppServiceEnvironmentResource"
+            }
+          },
           "202": {
             "description": "Operation is in progress.",
             "schema": {
               "$ref": "#/definitions/AppServiceEnvironmentResource"
             }
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         },
         "x-ms-long-running-operation": true
@@ -226,14 +229,11 @@
           "204": {
             "description": "App Service Environment does not exist"
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         },
         "x-ms-long-running-operation": true
@@ -285,14 +285,11 @@
               "$ref": "#/definitions/AppServiceEnvironmentResource"
             }
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         }
       }
@@ -822,14 +819,11 @@
               "$ref": "#/definitions/WorkerPoolResource"
             }
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         },
         "x-ms-long-running-operation": true
@@ -881,14 +875,11 @@
               "$ref": "#/definitions/WorkerPoolResource"
             }
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         }
       }
@@ -1339,14 +1330,11 @@
           "202": {
             "description": "Asynchronous operation in progress."
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         }
       }
@@ -1750,14 +1738,11 @@
               "$ref": "#/definitions/WorkerPoolResource"
             }
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         },
         "x-ms-long-running-operation": true
@@ -1816,14 +1801,11 @@
               "$ref": "#/definitions/WorkerPoolResource"
             }
           },
-          "400": {
-            "description": "Bad request."
-          },
-          "404": {
-            "description": "Not found."
-          },
-          "409": {
-            "description": "Conflict."
+          "default": {
+            "description": "App Service error response.",
+            "schema": {
+              "$ref": "./CommonDefinitions.json#/definitions/DefaultErrorResponse"
+            }
           }
         }
       }
